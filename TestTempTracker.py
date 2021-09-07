@@ -39,17 +39,14 @@ class TemperatureTracker(object):
 
     # Method to get the maximum recorded temperature
     def get_max(self, templist):
-        print(max(templist))
         return max(templist)
 
     # Method to get the minimum recorded temperature
     def get_min(self, templist):
-        print(min(templist))
         return min(templist)
 
     # Method to get the average of all the recorded temperatures - returns float
     def get_mean(self, templist):
-        print(float(sum(templist)/len(templist)))
         return float(sum(templist)/len(templist))
 
 # Flatten nested list helper method
