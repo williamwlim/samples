@@ -69,8 +69,8 @@ class TestInsertSingleTempWithTempRecord(unittest.TestCase):
         self.assertEqual(expected, actual)
 
 
-class TestInsertSingleTempWithMultipleParms(unittest.TestCase):
-    def test_InsertSingleTempWithMultipleParms(self):
+class TestInsertMultipleTempWithMultipleParms(unittest.TestCase):
+    def test_InsertMultipleTempWithMultipleParms(self):
         tracker = TemperatureTracker()
         actual = tracker.insert(88, 122, 111, 75, 99, 88)
         expected = [122, 111, 75, 99, 88, 88]
