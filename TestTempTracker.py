@@ -62,7 +62,6 @@ def flat(templist):
 class TestInsertSingleTempWithTempRecord(unittest.TestCase):
     def test_InsertSingleTempWithTempRecord(self):
         tracker = TemperatureTracker()
-
         record = [88, 122, 111, 75, 99]
         actual = tracker.insert(88, record)
         expected = [88, 122, 111, 75, 99, 88]
@@ -73,7 +72,6 @@ class TestInsertSingleTempWithTempRecord(unittest.TestCase):
 class TestInsertSingleTempWithMultipleParms(unittest.TestCase):
     def test_InsertSingleTempWithMultipleParms(self):
         tracker = TemperatureTracker()
-
         actual = tracker.insert(88, 122, 111, 75, 99, 88)
         expected = [122, 111, 75, 99, 88, 88]
 
@@ -84,7 +82,6 @@ class TestInsertSingleTempWithMultipleParms(unittest.TestCase):
 class TestInsertSingleTempNoTempRecord(unittest.TestCase):
     def test_InsertSingleTempWithNoTempRecord(self):
         tracker = TemperatureTracker()
-
         actual = tracker.insert(96)
         expected = [96]
 
@@ -105,7 +102,6 @@ class TestInsertListTempWithMultipleTempRecord(unittest.TestCase):
 class TestInsertListTempWithTempRecord(unittest.TestCase):
     def test_InsertListTempWithTempRecord(self):
         tracker = TemperatureTracker()
-
         record = [88, 122, 111]
         actual = tracker.insert([75, 99], record)
         expected = [88, 122, 111, 75, 99]
