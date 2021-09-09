@@ -16,7 +16,7 @@ class TemperatureTracker(object):
         # If optional parm is coming is as a list, flatten list
         if any(isinstance(temp, list) for temp in self.templist):
             # call method to flatten nested list
-            self.templist = flat(self.templist)
+            self.templist = self.flat(self.templist)
         # Handle case where optional parm is not provided
         if not self.templist:
             # Handle case where int is passed in as temperatures (no optional parm provided)
@@ -49,13 +49,13 @@ class TemperatureTracker(object):
     def get_mean(self, templist):
         return float(sum(templist)/len(templist))
 
-# Flatten nested list helper method
-def flat(templist):
-    if len(templist) == 0:
-        return templist
-    if isinstance(templist[0], list):
-        return flat(templist[0]) + flat(templist[1:])
-    return templist[:1] + flat(templist[1:])
+    # Flatten nested list helper method
+    def flat(self, templist):
+        if len(templist) == 0:
+            return templist
+        if isinstance(templist[0], list):
+            return self.flat(templist[0]) + self.flat(templist[1:])
+        return templist[:1] + self.flat(templist[1:])
 
 
 # Unittests for Temperature Tracker class methods
