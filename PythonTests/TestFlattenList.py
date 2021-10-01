@@ -1,4 +1,10 @@
-# Created/tested using python3.9 interpreter
+### Created/tested using python3.9 interpreter
+#
+#  Creating unit test that tests a method that 
+#  flattens nested arrays of Integers
+#
+###
+
 import unittest
 
 
