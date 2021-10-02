@@ -5,5 +5,5 @@ To run FileRenameApp:
 
 - Create a Python virtual environment.
 - Install the requirements in requirements.txt.
-- Run FileRenameTool.py in commandline or in IDE of choice. 
+- Run FileRenameTool.py from commandline or in IDE of choice. 
 
