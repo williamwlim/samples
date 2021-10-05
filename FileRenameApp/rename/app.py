@@ -5,7 +5,7 @@
 
 import sys
 from PyQt5.QtWidgets import QApplication
-from .views import Window
+from .appview import Window
 
 
 def main():
