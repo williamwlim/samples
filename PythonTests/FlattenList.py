@@ -1,7 +1,7 @@
 ### Created/tested using python3.9 interpreter
 #
-#  Creating unit test that tests a method that 
-#  flattens nested arrays of Integers
+#  Creating a method that flattens
+#  Nested arrays of Integers using recursion
 #
 ###
 
