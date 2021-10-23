@@ -1,6 +1,7 @@
 ### Created/tested using python3.9 interpreter
 #  
-#  Creating python unit tests for methods in Temperature Tracker class
+#  Creating a simple temperature tracker program where users can enter temperature (in Fahrenheit as integers) 
+#  And get the Max, Min, Median value of temperatures
 #
 ###
 import unittest
